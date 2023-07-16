@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary{
+    border: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+header{
+    background: rgba(255, 144, 14, 0.10);
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 240px;
+}
+.list-item{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin-right: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #424242;
+}
+.nav-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+}
+    /* banner styles */
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: #727272;
+    font-weight: 400;
+}
+.banner-img{
+    width: 70%;
+    margin: 50px 240px 45px 240px;
+}
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.teams-section{
+    display: flex;
+    align-items: center;
+}
+.teams-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-text{
+    padding-left: 76px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .first{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .third{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .nav-container, .teams-section{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .banner-img{
+        width: 100%;
+        margin: 0px;
+        /* padding: 10px; */
+    }
+    .teams-image{
+        grid-template-columns: 1fr;
+    }
+    .teams-text{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .nav-container, .teams-section{
+        flex-direction: column;
+        padding: 0%;
+    }
+    .banner-img{
+        width: 100%;
+        margin: 30px 0px;
+    }
+    .teams-text{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width:961px) and (max-width:1280px) {
+    .nav-container{
+        padding: 20px 50px;
+    }
+    .banner-img{
+        margin: 50px 240px 45px 200px;
+    }
+}
