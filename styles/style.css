@@ -90,6 +90,7 @@ main{
     justify-content: space-between;
     text-align: center;
     margin-top: 70px;
+
 }
 .facts-title{
     font-size: 3rem;
@@ -138,9 +139,15 @@ main{
 /* responsive */
 
 @media screen and (max-width:576px) {
-    .nav-container, .teams-section{
+    .nav-container, .teams-section
+    {
         padding: 10px;
         flex-direction: column;
+    }
+    .facts-section{
+        flex-direction: column;
+        padding-left: 70px;
+        gap: 20px;
     }
     .banner-img{
         width: 100%;
@@ -159,6 +166,9 @@ main{
     .nav-container, .teams-section{
         flex-direction: column;
         padding: 0%;
+    }
+    .facts-section{
+        gap: 1px;
     }
     .banner-img{
         width: 100%;
