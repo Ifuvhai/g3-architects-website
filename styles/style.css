@@ -85,6 +85,54 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+.facts-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 70px;
+}
+.facts-title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.box{
+    width: 230px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+.award-img{
+   margin-top: 40px;
+}
+.award-title{
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+.project-img{
+    margin-top: 40px;
+}
+.project-title{
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+.clint-img{
+    margin-top: 40px;
+
+}
+.clint-title{
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+.email-img{
+    margin-top: 40px;
+}
+.email-title{
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
 
 
 /* responsive */
